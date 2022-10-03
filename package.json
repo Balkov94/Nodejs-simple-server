@@ -1,0 +1,27 @@
+{
+  "name": "12-node-ts",
+  "version": "1.0.0",
+  "description": "NodeJS first Server",
+  "main": "index.js",
+  "author": "N.Balkov",
+  "license": "Apache-2.0",
+  "scripts": {
+    "server": "node --inspect=5858 -r ts-node/register ./src/server1.ts",
+    "tsc": "tsc -w",
+    "start": "nodemon -w ./dist ./dist/server1.js",
+    "build": "tsc",
+    "nodemon": "nodemon"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "concurrently": "^7.4.0",
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "rxjs": "^7.5.7"
+  }
+}
